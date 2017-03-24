@@ -7,7 +7,7 @@ def my_sin_approx(x):
     x = np.float64(x)
 
     exact = sin(x)
-    approx = x - (x ** 3) / math.factorial(3) + (x ** 6) / factorial(5) - (x ** 7) / factorial(7)
+    approx = x - (x ** 3) / factorial(3) + (x ** 5) / factorial(5) - (x ** 7) / factorial(7)
     actual_error = approx - exact
     relative_error = (actual_error / exact)
 
