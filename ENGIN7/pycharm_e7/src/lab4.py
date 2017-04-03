@@ -3,6 +3,7 @@ from math import factorial
 from math import sin
 import numpy as np
 
+
 def my_sin_approx_fixed(x, n):
     """
     >>> my_sin_approx_fixed(0, 0)
@@ -21,9 +22,10 @@ def my_sin_approx_fixed(x, n):
     :return: approx of sin(x)
     """
     sum = 0.0
-    for i in range(n+1):
-        sum += ((-1)**i * x**(2*i+1)) / factorial(2*i + 1)
+    for i in range(n + 1):
+        sum += ((-1) ** i * x ** (2 * i + 1)) / factorial(2 * i + 1)
     return sum
+
 
 def my_sin_approx_tolerance(x, tolerance):
     """
@@ -40,6 +42,7 @@ def my_sin_approx_tolerance(x, tolerance):
     :param tolerance: greater than zero, not NaN, inf
     :return: tuple (smallest possible n such that approx of sin(x) is within tolerance of actual, approx is part 1)
     """
+
     def within(a):
         return abs(a - actual) <= tolerance
 
@@ -47,8 +50,8 @@ def my_sin_approx_tolerance(x, tolerance):
     n = 0
     approx = 0.0
     while not within(approx):
-        n+=1
-        approx = my_sin_approx_fixed(x,n)
+        n += 1
+        approx = my_sin_approx_fixed(x, n)
     return (approx, n)
 
 
@@ -101,8 +104,9 @@ def my_sort(vector):
         vector[index + i] = vector[i]
         vector[i] = smallest
 
-    #vector.sort()
+    # vector.sort()
     return list(vector)
+
 
 def my_reverse_without_recursion(vector):
     """
@@ -117,12 +121,13 @@ def my_reverse_without_recursion(vector):
     :return: reversed vector
     """
     stk = []
-    while len(vector)>0:
+    while len(vector) > 0:
         stk.append(vector.pop())
     # newvector = []
     # while len(stk)>0:
     #     newvector.append(stk.pop())
     return stk
+
 
 def my_reverse_with_recursion(vector):
     """
@@ -136,14 +141,16 @@ def my_reverse_with_recursion(vector):
     :param vector: same as before
     :return: reversed vector
     """
+
     def helper(start, end):
         if start == end:
             return vector
         temp = vector[start]
         vector[start] = vector[end]
         vector[end] = temp
-        return helper(start+1, end-1)
-    return helper(0, len(vector)-1)
+        return helper(start + 1, end - 1)
+
+    return helper(0, len(vector) - 1)
 
 
 def my_parser(string, delimiters):
@@ -166,36 +173,108 @@ def my_parser(string, delimiters):
                 index = i
         if index == -1:
             continue
-        return (delim, string[:index], string[index+1:])
+        return (delim, string[:index], string[index + 1:])
     return ("", string, "")
+
+    # for i in range(len(string)):
+    #     if string[i] in delimiters:
+    #         return (string[i], string[:i], string[i + 1:])
+    # return ("", string, "")
 
 
 def my_calculator_inverse_precedence(expression):
     """
     >>> my_calculator_inverse_precedence("4-3.14")
-    0.8600
+    0.8599999999999999
     >>> my_calculator_inverse_precedence("4-2-2")
-    0
+    0.0
     >>> my_calculator_inverse_precedence("3+5*2")
-    16
+    16.0
     >>> my_calculator_inverse_precedence("2^3/3")
-    2
+    2.0
     >>> my_calculator_inverse_precedence("8-2-2*4^2")
-    256
+    256.0
     
     :param expression: string representing arithmetic expression
     :return: eval of expression using new order of operations
     """
-    return 0
+    try:
+        return float(expression)
+    except ValueError:
+        pass
+
+    op, left, right = my_parser(expression, "^")
+    if op == '^':
+        return my_calculator_inverse_precedence(left) ** my_calculator_inverse_precedence(right)
+
+    op, left, right = my_parser(expression, "*/")
+    if op == '*':
+        return my_calculator_inverse_precedence(left) * my_calculator_inverse_precedence(right)
+    elif op == '/':
+        return my_calculator_inverse_precedence(left) / my_calculator_inverse_precedence(right)
+
+    op, left, right = my_parser(expression, "+-")
+    if op == '+':
+        return my_calculator_inverse_precedence(left) + my_calculator_inverse_precedence(right)
+    elif op == '-':
+        return my_calculator_inverse_precedence(left) - my_calculator_inverse_precedence(right)
+
+    raise ValueError("Expression invalid")
+
 
 def my_calculator_with_undo(expression):
     """
     >>> my_calculator_with_undo("2.5-2")
-    0.500
+    0.5
     >>> my_calculator_with_undo("2.5-2!")
-    2.500
+    2.5
+    >>> my_calculator_with_undo("2*3+6!^2")
+    36.0
+    >>> my_calculator_with_undo("2*3+6!^2!")
+    6.0
+    >>> my_calculator_with_undo("2*3+6!!^2")
+    4.0
     
     :param expression: same as before
     :return: see above
     """
-    return 0
+    undo = []
+    delim = "+-/*^!"
+
+    def leftParse(expr):
+        for i in range(len(expr)):
+            if expr[i] in delim:
+                return (expr[i], expr[:i], expr[i + 1:])
+        return '', expr, ''
+
+    def helper(state, op, rest):
+        nonlocal undo
+        op2, left2, right2 = leftParse(rest)
+
+        if op == '':
+            return state
+
+        left2 = float(left2)
+        if op == '^':
+            state = state ** left2
+        elif op == '*':
+            state = state * left2
+        elif op == '/':
+            state = state / left2
+        elif op == '+':
+            state = state + left2
+        elif op == '-':
+            state = state - left2
+
+        if op2 == '!':
+            while op2 == '!':
+                state = undo.pop()
+                op2, left2, right2 = leftParse(right2)
+
+        undo.append(state)
+        return helper(state, op2, right2)
+
+    op1, state1, rest1 = leftParse(expression)
+    state1 = float(state1)
+    undo.append(state1)
+    return helper(state1, op1, rest1)
