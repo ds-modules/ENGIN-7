@@ -1,0 +1,8 @@
+,,Borehole 1,Borehole 2,Borehole 3,Borehole 4,Borehole 5
+,x-location (m),1300,1420,1550,1600,1780
+,Elevation (m),350,356,354,355,359
+depth to (m):,Water Table,8,13,9,10,14
+,Medium Sand,2,5,3,4,1
+,Silty Clay,NaN,NaN,15,14,20
+,Fine Sand with Clay,20,23,23,29,27
+,Bedrock,45,47,43,49,55
