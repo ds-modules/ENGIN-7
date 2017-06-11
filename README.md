@@ -16,9 +16,8 @@ The repo is split between the 2016 and 2017 ENGIN-7 assignments, and currently w
 ## Current Progress
 - [ ] 2016
 	- [ ] Converting the MATLAB assingments into raw python code
-		- [x] Lab 1
-		- [x] Lab 2-3
-		- [ ] Lab 4-12
+		- [x] Lab 1-4
+		- [ ] Lab 5-12
 	- [ ] Translating the MATLAB PDF assignments into markdown and LaTeX in the Jupyter notebook
 	- [ ] Creating soluton notebooks with finished python code
 	- [ ] Writing autograders for each notebook with Python `unittest`s
