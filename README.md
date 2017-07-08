@@ -21,13 +21,13 @@ The repo is split between the 2016 and 2017 ENGIN-7 assignments, and currently w
 		- [x] Lab 8 (besides last question)
 		- [ ] Lab 9-12
 	- [ ] Translating the MATLAB PDF assignments into markdown and LaTeX in the Jupyter notebook
-		- [x] Lab 1-4
-		- [ ] Lab 5-12
-	- [ ] Creating soluton notebooks with finished python code
+		- [x] Lab 1-7
+		- [ ] Lab 8-12
+	- [ ] Finishing soluton notebooks with finished python code
 		- [x] Lab 1-4
 		- [ ] Lab 5-12
 	- [ ] Writing autograders for each notebook with Python `unittest`s
-	- [ ] Polishing the notebooks
+	- [ ] Polishing the notebooks and creating student notebooks
 - [ ] 2017
 	- Development halted
 
