@@ -21,8 +21,8 @@ The repo is split between the 2016 and 2017 ENGIN-7 assignments, and currently w
 		- [x] Lab 8 (besides last question)
 		- [ ] Lab 9-12
 	- [ ] Translating the MATLAB PDF assignments into markdown and LaTeX in the Jupyter notebook
-		- [x] Lab 1-9
-		- [ ] Lab 10-12
+		- [x] Lab 1-11
+		- [ ] Lab 12
 	- [ ] Finishing soluton notebooks with finished python code
 		- [x] Lab 1-4
 		- [ ] Lab 5-12
@@ -34,6 +34,7 @@ The repo is split between the 2016 and 2017 ENGIN-7 assignments, and currently w
 		- make sure MATLAB remnants are replaced with python
 			- especially headers
 		- add equation numbers where needed
+		- update bigo to \mathcal{O}
 
 - [ ] 2017
 	- Development halted
