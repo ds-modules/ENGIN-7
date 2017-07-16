@@ -20,9 +20,8 @@ The repo is split between the 2016 and 2017 ENGIN-7 assignments, and currently w
 		- [ ] Lab 6-7
 		- [x] Lab 8 (besides last question)
 		- [ ] Lab 9-12
-	- [ ] Translating the MATLAB PDF assignments into markdown and LaTeX in the Jupyter notebook
-		- [x] Lab 1-11
-		- [ ] Lab 12
+	- [x] Translating the MATLAB PDF assignments into markdown and LaTeX in the Jupyter notebook
+		- [x] Lab 1-12
 	- [ ] Finishing soluton notebooks with finished python code
 		- [x] Lab 1-4
 		- [ ] Lab 5-12
@@ -35,6 +34,8 @@ The repo is split between the 2016 and 2017 ENGIN-7 assignments, and currently w
 			- especially headers
 		- add equation numbers where needed
 		- update bigo to \mathcal{O}
+		- space equation numbers using \qquad\qquad
+		- how to deal with classes
 
 - [ ] 2017
 	- Development halted
