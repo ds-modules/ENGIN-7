@@ -1,5 +1,22 @@
 # Engineering 7 in Python Notebooks
 
+## UCB Interact Links
+
+- [Lab 1](http://datahub.berkeley.edu/user-redirect/interact?account=ds-modules&repo=ENGIN-7&branch=master&path=Lab01/staff.ipynb)
+- [Lab 2](http://datahub.berkeley.edu/user-redirect/interact?account=ds-modules&repo=ENGIN-7&branch=master&path=Lab02/staff.ipynb)
+- [Lab 3](http://datahub.berkeley.edu/user-redirect/interact?account=ds-modules&repo=ENGIN-7&branch=master&path=Lab03/staff.ipynb)
+- [Lab 4](http://datahub.berkeley.edu/user-redirect/interact?account=ds-modules&repo=ENGIN-7&branch=master&path=Lab04/staff.ipynb)
+- [Lab 5](http://datahub.berkeley.edu/user-redirect/interact?account=ds-modules&repo=ENGIN-7&branch=master&path=Lab05/staff.ipynb)
+- [Lab 6](http://datahub.berkeley.edu/user-redirect/interact?account=ds-modules&repo=ENGIN-7&branch=master&path=Lab06/staff.ipynb)
+- [Lab 7](http://datahub.berkeley.edu/user-redirect/interact?account=ds-modules&repo=ENGIN-7&branch=master&path=Lab07/staff.ipynb)
+- [Lab 8](http://datahub.berkeley.edu/user-redirect/interact?account=ds-modules&repo=ENGIN-7&branch=master&path=Lab08/staff.ipynb)
+- [Lab 9](http://datahub.berkeley.edu/user-redirect/interact?account=ds-modules&repo=ENGIN-7&branch=master&path=Lab09/staff.ipynb)
+- [Lab 10](http://datahub.berkeley.edu/user-redirect/interact?account=ds-modules&repo=ENGIN-7&branch=master&path=Lab10/staff.ipynb)
+- [Lab 11](http://datahub.berkeley.edu/user-redirect/interact?account=ds-modules&repo=ENGIN-7&branch=master&path=Lab11/staff.ipynb)
+- [Lab 12](http://datahub.berkeley.edu/user-redirect/interact?account=ds-modules&repo=ENGIN-7&branch=master&path=Lab12/staff.ipynb)
+
+---
+
 This project is a proof of concept to convert the assignments of the Berkeley Engineering 7 course, which is currently taught in MATLAB, into a series of Jupyter Notebooks. Engineering 7 is a freshman-level introduction to programming for scientists and engineering students.
 
 Our goal is to revamp the course materials to be fully python based, so that new students will have a more interactive and intutive experience in an open-source language. With Jupyter notebooks, students do not need to worry about the scaffolding of creating seperate files for every function, and can read and solve problems directly in one place. Instead, they can focus on learning the fundamentals of programming and writing the actual code itself, all managed in one place. Python and Jupyter Notebooks are also open-source and free to use, and also more extendable to future computer science and coding projects compared to MATLAB. For data science purposes, Jupyter notebooks are incredibly convient, as they support rendering of visuals directly in the notebook, which can be updated along with code.
