@@ -71,14 +71,15 @@ The repo is split between the 2016 and 2017 ENGIN-7 assignments, and currently w
 
 ## Wish List
 - [ ] Writing autograders for each notebook with Python `unittest`s
+- [ ] Convert `.mat` data files to `.csv`
 - [ ] Polishing the notebooks and creating student notebooks
 	- Replace markdown pictures with html, and make nice captions
-	- replace vectors with \mathbf{} font
+	- replace vectors with `\mathbf{}` font
 	- fix wording for lists/vectors/arrays
 	- make sure MATLAB remnants are replaced with python
 		- especially headers
 	- add equation numbers where needed
-	- update bigo to \mathcal{O}
+	- update bigo to `\mathcal{O}`
 	- space equation numbers using \qquad\qquad
 	- how to deal with classes
 
