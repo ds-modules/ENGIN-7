@@ -1,5 +1,7 @@
 # Engineering 7 in Python Notebooks
 
+[![Binder](https://beta.mybinder.org/badge.svg)](https://beta.mybinder.org/v2/gh/ds-modules/ENGIN-7/master)
+
 ## UCB Interact Links
 
 - [Lab 1](http://datahub.berkeley.edu/user-redirect/interact?account=ds-modules&repo=ENGIN-7&branch=master&path=Lab01/staff.ipynb)
