@@ -28,7 +28,7 @@ The repo is split between the 2016 and 2017 ENGIN-7 assignments, and currently w
 
 
 ## Current Progress
-- [ ] 2016
+- [x] 2016
 	- [x] Converting the MATLAB assignments into raw python code
 		- [x] Lab 1
 		- [x] Lab 2
@@ -86,5 +86,5 @@ The repo is split between the 2016 and 2017 ENGIN-7 assignments, and currently w
 	- Development halted for now.
 
 
-### Developers
+## Developers
 Daniel Ho, Adam Sequoia, Jack Zhang, Robert Sweeney
