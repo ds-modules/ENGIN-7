@@ -29,31 +29,62 @@ The repo is split between the 2016 and 2017 ENGIN-7 assignments, and currently w
 
 ## Current Progress
 - [ ] 2016
-	- [x] Converting the MATLAB assingments into raw python code
-		- [x] Lab 1-5
-		- [x] Lab 6-7
-		- [x] Lab 8 (besides last question)
-		- [x] Lab 9-12
+	- [x] Converting the MATLAB assignments into raw python code
+		- [x] Lab 1
+		- [x] Lab 2
+		- [x] Lab 3
+		- [x] Lab 4
+		- [x] Lab 5
+		- [x] Lab 6
+		- [x] Lab 7
+		- [x] Lab 8
+		- [x] Lab 9
+		- [x] Lab 10
+		- [x] Lab 11
+		- [x] Lab 12 (12, 2.2 cutoff)
 	- [x] Translating the MATLAB PDF assignments into markdown and LaTeX in the Jupyter notebook
-		- [x] Lab 1-12
+		- [x] Lab 1
+		- [x] Lab 2
+		- [x] Lab 3
+		- [x] Lab 4
+		- [x] Lab 5
+		- [x] Lab 6
+		- [x] Lab 7
+		- [x] Lab 8
+		- [x] Lab 9
+		- [x] Lab 10
+		- [x] Lab 11
+		- [x] Lab 12
 	- [x] Finishing soluton notebooks with finished python code
-		- [x] Lab 1-4
-		- [x] Lab 5-12
-	- [ ] Writing autograders for each notebook with Python `unittest`s
-	- [ ] Polishing the notebooks and creating student notebooks
-		- Replace markdown pictures with html, and make nice captions
-		- replace vectors with \mathbf{} font
-		- fix wording for lists/vectors/arrays
-		- make sure MATLAB remnants are replaced with python
-			- especially headers
-		- add equation numbers where needed
-		- update bigo to \mathcal{O}
-		- space equation numbers using \qquad\qquad
-		- how to deal with classes
+		- [x] Lab 1
+		- [x] Lab 2
+		- [x] Lab 3
+		- [x] Lab 4
+		- [x] Lab 5
+		- [x] Lab 6
+		- [x] Lab 7
+		- [x] Lab 8
+		- [x] Lab 9
+		- [x] Lab 10
+		- [x] Lab 11
+		- [x] Lab 12 (12, 2.2 cutoff)
+
+## Wish List
+- [ ] Writing autograders for each notebook with Python `unittest`s
+- [ ] Polishing the notebooks and creating student notebooks
+	- Replace markdown pictures with html, and make nice captions
+	- replace vectors with \mathbf{} font
+	- fix wording for lists/vectors/arrays
+	- make sure MATLAB remnants are replaced with python
+		- especially headers
+	- add equation numbers where needed
+	- update bigo to \mathcal{O}
+	- space equation numbers using \qquad\qquad
+	- how to deal with classes
 
 - [ ] 2017
-	- Development halted
+	- Development halted for now.
 
 
-### Contact
-Daniel Ho: daniel.ho at berkeley.edu if you have any questions!
+### Developers
+Daniel Ho, Adam Sequoia, Jack Zhang, Robert Sweeney
